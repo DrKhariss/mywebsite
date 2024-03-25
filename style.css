@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+background: #000;
+color: #fff;
+}
+
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 0px;
+   position: static;
+}
+
+.logo{
+  width: 150px;
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    margin-right: 70px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+nav button:hover{
+    background: #c50101;
+}
+
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./netflixbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.signup{
+    background: transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    overflow: hidden;
+}
+
+.signup input{
+    flex: 1;
+    border: 1px solid #ffffff9f;
+    outline: 0;
+    margin-right: 17px;
+    padding: 20px;
+    background: transparent;
+    opacity: 0.9;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border:solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.signup button:hover{
+    background: #c50101;
+}
+
+.features{
+    padding: 50px 12px;
+    font-size: 22px;
+
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    border-bottom: 5px solid #333;
+}
+
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+#imgg{
+    margin-left: 20%;
+    max-width: 30px;
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.body{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.faq{
+   padding: 10px 12px;
+   text-align: center;
+   font-size: 18px;
+   margin-bottom: 30px;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.accordion{
+    width: 100%;
+    margin: 6px auto;
+    background-color: #303030;
+    color: #fff;
+    font-size: 20px;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: max;
+}
+   
+
+.accordion:hover{
+    background-color: #686767;
+}
+
+.accordion::after{
+    content: '\02795';
+    font-size: 20px;
+    color: #fff;
+}
+
+.accordion-active::after {
+    content: "\274C";
+    color: #fff;
+}
+
+.panel{
+    background-color: #303030;
+    color: #fff;
+    margin-bottom: 4px;
+    transition: max-height .33s cubic-bezier(.5,0,.1,1);
+}
+.panel p {
+    font-size: 20px;
+    padding: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.panel-closed{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.panel-open{
+    max-height: 700px;
+}
+  
+.faq .p{
+    margin-top: 70px;
+}
+
+
+.faq .signup {
+    max-width: 600;
+    margin: 20px auto 60px;
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px; 
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+    border: none;
+}
+
+.footer .col a:hover{
+    text-decoration: underline;
+}
+
+.language{
+    background: transparent;
+    border: 1px solid #777;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.language img{
+    width: 10px;
+    margin-left: 1opx;
+}
+
+.language:hover{
+    cursor: pointer;
+    background-color: #333;
+}
+
+.copyright{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .logo {
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    .content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+
+    .signup{
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    .text, .img{
+        flex-basis: 100%;
+    }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .features .row{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .accordion{
+        font-size: 14px;
+    }
+    .panel p{
+        font-size: 14px;
+    }
+    .accordion::after{
+        font-size: 10px;
+    }
+
+}
